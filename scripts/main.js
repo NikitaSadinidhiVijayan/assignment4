@@ -61,14 +61,13 @@ function showDetails() {
         frame.classList.remove(TINY_EFFECT_CLASS);
     }, 50);
 }
-
+// function for number keypress.
 function addKeyDownHandler(thumb, i) {
     'use strict';
     var index = i;
-  /*  console.log(index);*/
     document.body.addEventListener('keyup', function(event) {
         event.preventDefault();
-        /*console.log(event.keyCode);*/
+        console.log(event.keyCode);
         if (event.keyCode === (NUM_KEY + index )) {
             setDetailsFromThumb(thumb);
             showDetails();
